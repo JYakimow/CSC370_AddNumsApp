@@ -45,6 +45,7 @@ namespace CSC370_Assignment4
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printYourResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveResultsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -165,12 +166,14 @@ namespace CSC370_Assignment4
             // howToUseToolStripMenuItem
             // 
             this.howToUseToolStripMenuItem.Name = "howToUseToolStripMenuItem";
-            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.howToUseToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.howToUseToolStripMenuItem.Text = "How to use";
             this.howToUseToolStripMenuItem.Click += new System.EventHandler(this.howToUseToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
+            this.saveToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.saveResultsToolStripMenuItem});
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.saveToolStripMenuItem.Text = "Save";
@@ -190,6 +193,13 @@ namespace CSC370_Assignment4
             this.printYourResultsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.printYourResultsToolStripMenuItem.Text = "Print your results";
             this.printYourResultsToolStripMenuItem.Click += new System.EventHandler(this.printYourResultsToolStripMenuItem_Click);
+            // 
+            // saveResultsToolStripMenuItem
+            // 
+            this.saveResultsToolStripMenuItem.Name = "saveResultsToolStripMenuItem";
+            this.saveResultsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveResultsToolStripMenuItem.Text = "Save Results";
+            this.saveResultsToolStripMenuItem.Click += new System.EventHandler(this.saveResultsToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -237,6 +247,7 @@ namespace CSC370_Assignment4
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem printYourResultsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem saveResultsToolStripMenuItem;
     }
 }
 

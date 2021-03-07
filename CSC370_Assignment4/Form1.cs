@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.IO;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -160,8 +161,15 @@ namespace CSC370_Assignment4
 
         private void printYourResultsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Total weight of shims: " + outputString + "\n \n" + "Number of shims: " + countOutput);
+            MessageBox.Show("Total weight of shims: " + outputString + " lbs" + "\n \n" + "Number of shims: " + countOutput);
             resetValues();
+        }
+
+        private void saveResultsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string currentTimeAndDate = DateTime.Now.ToString("MM-dd-yyyy h:mm:ss tt");
+            string fileOutputText = "Total weight of shims: " + outputString + " lbs" + "\n \n" + "Number of shims: " + countOutput + "\n \n" + "Current time: " + currentTimeAndDate;
+            File.WriteAllText("save.txt", fileOutputText);
         }
     }
 }
